@@ -33,7 +33,6 @@ import {
   Undo2Icon,
   UploadIcon,
 } from "lucide-react";
-import { type Level } from "@tiptap/extension-heading";
 import {
   DropdownMenu,
   DropdownMenuContent,

@@ -24,19 +24,19 @@ export const LineHeightExtension = Extension.create({
         attributes: {
           lineHeight: {
             default: this.options.defaultLineHeight,
-            renderHTML: (attributes) => {
+            renderHTML: attributes => {
               if (!attributes.lineHeight) return {};
               return {
                 style: `line-height: ${attributes.lineHeight}`,
               };
             },
-            parseHtml: (element) => {
+            parseHtml: element => {
               return element.style.lineHeight || this.options.defaultLineHeight;
             },
           },
         },
       },
-    ];
+    ]
   },
   addCommands() {
     return {
