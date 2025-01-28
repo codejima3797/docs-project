@@ -30,7 +30,7 @@ export const LineHeightExtension = Extension.create({
                 style: `line-height: ${attributes.lineHeight}`,
               };
             },
-            parseHtml: element => {
+            parseHtml: (element: HTMLElement) => {
               return element.style.lineHeight || this.options.defaultLineHeight;
             },
           },
